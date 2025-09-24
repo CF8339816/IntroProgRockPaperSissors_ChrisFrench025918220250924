@@ -33,12 +33,14 @@ namespace IntroProgRockPaperSissors_ChrisFrench025918220250924
             {
                 Console.WriteLine($"You have {Wins} wins. Good Job you are the winner this turnament");
                 Console.ReadKey(true);
+                
             }
             else if (Loose == 3)
             {
                 Console.WriteLine($"You have {Loose} losses. Too bad , this time you are the looser this turnament");
                 Console.ReadKey(true);
-               
+
+            
             }
 
         }
@@ -68,19 +70,19 @@ namespace IntroProgRockPaperSissors_ChrisFrench025918220250924
             Console.WriteLine("what is your Throw?  1 = Rock, 2 = Paper, 3 = Sissors");
             string playerThrow = Console.ReadLine();
 
-            if (playerThrow == "1")
-            {
-                if (ChallengerThrow == 2)
+           // if (playerThrow == "1")
+           // {
+                if (ChallengerThrow == 2)//  playerThrow == "1") 
                 {
                     Console.WriteLine("You chose Rock, the challenger chose Paper...You loose..");
                 Console.ReadKey(true);
                 Loose ++;
                 }
-                else if (ChallengerThrow == 3)
+                else if (ChallengerThrow == 3 )// playerThrow == "1")
                 {
                     Console.WriteLine("You chose Rock, the challenger chose Sissors...You Win..");
                 Console.ReadKey(true);
-                Wins++;
+                Wins ++;
                 }
                 else
                 {
@@ -88,17 +90,17 @@ namespace IntroProgRockPaperSissors_ChrisFrench025918220250924
                 Console.ReadKey(true);
                 }
                 
-            }
+           // }
 
-            if (playerThrow == "2")
-            {
-                if (ChallengerThrow == 1)
+           // if (playerThrow == "2")
+            //{
+                if (ChallengerThrow == 1 )// playerThrow == "2")
                 {
                     Console.WriteLine("You chose Paper, the challenger chose Rock...You Win..");
                 Console.ReadKey(true);
                 Wins++;
                 }
-                else if (ChallengerThrow == 3)
+                else if (ChallengerThrow == 3)// && playerThrow == "2")
                 {
                     Console.WriteLine("You chose Paper, the challenger chose Sissors...You Loose..");
                 Console.ReadKey(true);
@@ -110,17 +112,17 @@ namespace IntroProgRockPaperSissors_ChrisFrench025918220250924
                 Console.ReadKey(true);
                 }
                 
-            }
+           // }
 
-            if (playerThrow == "3")
-            {
-                if (ChallengerThrow == 1)
+           // if (playerThrow == "3")
+           // {
+                if (ChallengerThrow == 1)//&& playerThrow == "3")
                 {
                     Console.WriteLine("You chose Sissors, the challenger chose Rock...You Loose..");
                 Console.ReadKey(true);
                 Loose++;
                 }
-                else if (ChallengerThrow == 2)
+                else if (ChallengerThrow == 2 )//&& playerThrow == "3")
                 {
                     Console.WriteLine("You chose Sissors, the challenger chose Paper...You Win..");
                 Console.ReadKey(true);
@@ -133,7 +135,7 @@ namespace IntroProgRockPaperSissors_ChrisFrench025918220250924
                 }
 
              
-            }
+          //  }
             winOrLoose();
             WANA();
 
